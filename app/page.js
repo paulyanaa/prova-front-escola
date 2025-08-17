@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/disciplinas/por-curso');
+        const response = await fetch('http://localhost:3003/disciplinas/por-curso');
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
